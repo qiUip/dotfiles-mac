@@ -1,7 +1,7 @@
 #+TITLE: dotfiles-mac
 #+DESCRIPTION: Personal dotfiles for macOS
 #+AUTHOR: qiUip
-#+OPTIONS: num:t
+#+OPTIONS: num:nil
 
 * Personal macOS dotfiles for yabai, skhd and sketchybar
 The purpose of this repository is to keep track and share my personal configuration files between my macOS computers. As I thought they might be useful for others, the repository is made public, but please keep in mind that your mileage may vary.
