@@ -1,0 +1,23 @@
+#+TITLE: dotfiles-mac
+#+DESCRIPTION: Personal dotfiles for macOS
+#+AUTHOR: qiUip
+#+OPTIONS: num:t
+
+* Personal macOS dotfiles for yabai, skhd and sketchybar
+The purpose of this repository is to keep track and share my personal configuration files between my macOS computers. As I thought they might be useful for others, the repository is made public, but please keep in mind that your mileage may vary.
+
+To use these dot files, clone this repository to your desired location and create a symbolic link for each of the folders into =$HOME/.config= with the exception of the config files for /skhd/ in =yabai/skhdrc= which have to be present in =$HOME/.skhdrc=.
+
+** Dependencies
+- [[https://github.com/koekeishiya/yabai][yabai]]
+- [[https://github.com/koekeishiya/skhd][skhd]]
+- [[https://github.com/FelixKratz/SketchyBar][Sketchybar]]
+- [[https://www.nerdfonts.com/][Nerd Fonts]]
+- [[https://github.com/kovidgoyal/kitty][kitty]] (optional, can be replaced by your terminal emulator of choice)
+- [[https://github.com/railwaycat/homebrew-emacsmacport][emacs mac port]] (optional)
+
+** Notes
+These dotfiles are mostly adapted from other people's configurations I stumbled
+upon online and I take no credit for. I have only stitched them together and slightly
+adapted them to my needs. The configuration files for yabai and skhd were adapted from https://github.com/julian-heng/yabai-config and for Sketchybar from https://github.com/Pe8er/dotfiles.  One exception is the scratchpad script in
+=yabai/scripts/scratchpad.sh= which was my own creation.
