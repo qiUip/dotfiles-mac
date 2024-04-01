@@ -63,7 +63,7 @@ else
        yabai -m window "$scratchpad_id" --toggle float || handle_error "Failed to set window to float"
     fi
 
-    main_display_info=$(yabai -m query --displays | jq -r '.[] | select(.id == 1) | .frame') || handle_error "Failed to get main display dimensions"
+    main_display_info=$(yabai -m query --displays | jq -r '.[] | select(.["has-focus"] == true) | .frame') || handle_error "Failed to get main display dimensions"
     main_width=$(echo "$main_display_info" | jq -r '.w' | awk -F '.' '{print $1}') || handle_error "Failed to parse main display width"
     main_height=$(echo "$main_display_info" | jq -r '.h' | awk -F '.' '{print $1}') || handle_error "Failed to parse main display height"
 

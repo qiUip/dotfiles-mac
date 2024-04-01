@@ -3,6 +3,7 @@
 cmd - return : kitty -1 ${HOME}
 cmd + shift - e : "${HOME}"/.config/yabai/scripts/open_emacs.sh
 cmd + lctrl - return : "${HOME}"/.config/yabai/scripts/scratchpad.sh
+cmd - b : /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome
 
 # Show system statistics
 ralt + lalt - 1 : "${HOME}"/.config/yabai/scripts/show_cpu.sh
@@ -86,10 +87,10 @@ shift + alt - x : yabai -m space --mirror x-axis
 shift + alt - y : yabai -m space --mirror y-axis
 
 # Set insertion point for focused container
-shift + lctrl + cmd - h : yabai -m window --insert west
-shift + lctrl + cmd - j : yabai -m window --insert south
-shift + lctrl + cmd - k : yabai -m window --insert north
-shift + lctrl + cmd - l : yabai -m window --insert east
+shift + lctrl + alt - h : yabai -m window --insert west
+shift + lctrl + alt - j : yabai -m window --insert south
+shift + lctrl + alt - k : yabai -m window --insert north
+shift + lctrl + alt - l : yabai -m window --insert east
 
 # Float / Unfloat window
 shift + alt - space : \
